@@ -1,0 +1,13 @@
+﻿    html, body, p, a {
+        padding: 0;
+        border: 0;
+        margin: 0;
+    }
+
+    input{
+        width: 100%
+    }
+
+    container{
+        height: auto;
+    }
