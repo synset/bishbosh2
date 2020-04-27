@@ -4,47 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Bish-Bosh 2.0</title>
+
     <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 
     <div class="container">
-
-        <div class="row" style="padding-top: 20px; padding-left: 20px;">Make your choices and click "Start":</div>
-
+           
+        <div class="row">
+            Make your choices and click "Start":
+        </div>
+    
         <form-group id="chooseNumbers" action="/action_page.php">
-            <div class="row" style="padding: 20px;">
+            <div class="row">
                 Bish (1-5): <input id="bishNumber" type="text" class="form-control" placeholder="Choose a number from 1-5" autofocus>
             </div>
-            <div class="row" style="padding: 20px;">
+            <div class="row">
                 Bosh (1-5): <input id="boshNumber" type="text" class="form-control" placeholder="Choose a number from 1-5" autofocus>
             </div>
-            <div class="row" style="padding: 20px;">
+            <div class="row">
                 Highest number: <input id="lengthNumber" type="text" class="form-control" placeholder="Choose a random number" autofocus">
             </div>
-            <div class="row" style="padding-left: 20px; padding-right: 20px; width: 100px;">
+            <div class="buttonRow">
                 <input type="button" onclick="runBishBosh()" value="Start">
             </div>
-            <div class="row" style="padding-top: 20px; padding-left: 20px;">
-               <div id="displayResults">
+            <div class="row">
+                <div id="displayResults">
 
-               </div>
+                </div>
             </div>
         </form-group>
 
     </div>
 
-    <nav class="navbar fixed-bottom" style="padding-top: 20px;">
-        <footer class="page-footer font-small blue">
-            <div class="footer-copyright text-center py-3">
-                © 2020 Copyright:
-                <a href="index.html">Synnöve Settman</a>
-            </div>
-        </footer>
-    </nav>
+    <div class="footer">
+        © 2020 Copyright:<a href="#">Synnöve Settman</a>
+    </div>
 
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <script src="Scripts/bootstrap.bundle.js"></script>
     <script src="bishbosh.js"></script>
 
 </body>
